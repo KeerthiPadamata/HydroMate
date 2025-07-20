@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydraMate-Water Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#00796b" />
+    <link rel="icon" href="assessts/water_drop_icon.png" type="image/png" />
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HydraMate</h1>
+            <p>Your Daily Water Tracker</p>
+        </header>
+
+        <section class="body-section">
+            <div class="body-container">
+                <img src="assessts/human-body.svg" alt="Human Body" id="human"/>
+                <div id="water-fill"></div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <p>Goal:<span id="goal">3 liters</span></p>
+            <p>Current:<span id="current">0 liters</span></p>
+            <p>Remaining:<span id="remaining">3 liters</span></p>
+        </section>
+
+        <section class="action">
+            <button id="add-water">Add Water</button>
+        </section>
+
+        <section class="progress section">
+            <div class="progress-container" >
+            <div id="progress-text">0%</div>
+            </div>
+        </section>
+
+        <section class="reminder section">
+        <div id="reminder-text">Stay Hydrated</div>
+        </section>
+
+        <section class="streak">
+            <p>Streak: <span id="streak">0 days🔥</span></p>
+        </section>
+    </div>
+    <script src="script.js" defer></script>
+
+</body>
+</html>

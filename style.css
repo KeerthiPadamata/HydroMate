@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e0f7fa;
+  color: #003b46;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #00796b;
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.body-container {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.body-container img {
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+#water-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 188, 212, 0.6);
+  z-index: 2;
+  height: 0%;
+  transition: height 0.5s ease-in-out;
+  border-radius: 0 0 8px 8px;
+}
+
+.stats {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.stats p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.action {
+  text-align: center;
+  margin: 15px 0;
+}
+
+button#add-water {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button#add-water:hover {
+  background-color: #004d40;
+}
+
+.progress-container {
+  height: 30px;
+  background-color: #b2ebf2;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+
+#progress-text {
+  background-color: #00acc1;
+  color: black;
+  height: 100%;
+  width: 0%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  transition: width 0.5s ease-in-out;
+}
+
+.reminder {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #00796b;
+}
+
+.streak {
+  text-align: center;
+  font-weight: bold;
+  color: #004d40;
+}
